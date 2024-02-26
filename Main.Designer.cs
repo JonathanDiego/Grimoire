@@ -38,33 +38,8 @@
             this.duplicateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pMain = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.ssStatus = new System.Windows.Forms.StatusStrip();
-            this.pgConfig = new System.Windows.Forms.PropertyGrid();
-            this.pCommands = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.lComputer = new System.Windows.Forms.Label();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.sfd = new System.Windows.Forms.SaveFileDialog();
-            this.ofd = new System.Windows.Forms.OpenFileDialog();
-            this.tSearch = new System.Windows.Forms.TextBox();
-            this.bChangeAll = new System.Windows.Forms.Button();
-            this.bNewComputer = new System.Windows.Forms.Button();
-            this.bNewFolder = new System.Windows.Forms.Button();
-            this.bTrash = new System.Windows.Forms.Button();
-            this.bCut = new System.Windows.Forms.Button();
-            this.bPaste = new System.Windows.Forms.Button();
-            this.bCopy = new System.Windows.Forms.Button();
-            this.bDown = new System.Windows.Forms.Button();
-            this.bUp = new System.Windows.Forms.Button();
             this.bSearch = new System.Windows.Forms.Button();
+            this.tSearch = new System.Windows.Forms.TextBox();
             this.bModelUnlock = new System.Windows.Forms.Button();
             this.bModelLock = new System.Windows.Forms.Button();
             this.bAbout = new System.Windows.Forms.Button();
@@ -74,19 +49,47 @@
             this.bOpen = new System.Windows.Forms.Button();
             this.bNew = new System.Windows.Forms.Button();
             this.bClose = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.ssStatus = new System.Windows.Forms.StatusStrip();
+            this.pgConfig = new System.Windows.Forms.PropertyGrid();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.lComputer = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.sfd = new System.Windows.Forms.SaveFileDialog();
+            this.ofd = new System.Windows.Forms.OpenFileDialog();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.bUp = new System.Windows.Forms.Button();
+            this.bDown = new System.Windows.Forms.Button();
+            this.bCopy = new System.Windows.Forms.Button();
+            this.bPaste = new System.Windows.Forms.Button();
+            this.bCut = new System.Windows.Forms.Button();
+            this.bTrash = new System.Windows.Forms.Button();
+            this.bNewFolder = new System.Windows.Forms.Button();
+            this.bNewComputer = new System.Windows.Forms.Button();
+            this.bChangeAll = new System.Windows.Forms.Button();
+            this.pCommands = new System.Windows.Forms.Panel();
             this.cmsComputerMap.SuspendLayout();
             this.pMain.SuspendLayout();
-            this.pCommands.SuspendLayout();
             this.panel9.SuspendLayout();
+            this.pCommands.SuspendLayout();
             this.SuspendLayout();
             // 
             // tvComputerMap
             // 
             this.tvComputerMap.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tvComputerMap.FullRowSelect = true;
+            this.tvComputerMap.HideSelection = false;
             this.tvComputerMap.ImageIndex = 0;
             this.tvComputerMap.ImageList = this.imageList1;
             this.tvComputerMap.Location = new System.Drawing.Point(0, 60);
             this.tvComputerMap.Name = "tvComputerMap";
+            this.tvComputerMap.PathSeparator = " - ";
             this.tvComputerMap.SelectedImageIndex = 0;
             this.tvComputerMap.Size = new System.Drawing.Size(436, 494);
             this.tvComputerMap.TabIndex = 1;
@@ -169,283 +172,6 @@
             this.pMain.Size = new System.Drawing.Size(1027, 60);
             this.pMain.TabIndex = 0;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Khaki;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(10, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1007, 10);
-            this.panel2.TabIndex = 4;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Khaki;
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(10, 50);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1007, 10);
-            this.panel4.TabIndex = 3;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Khaki;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(1017, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(10, 60);
-            this.panel3.TabIndex = 2;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Khaki;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(10, 60);
-            this.panel1.TabIndex = 0;
-            // 
-            // ssStatus
-            // 
-            this.ssStatus.Location = new System.Drawing.Point(0, 554);
-            this.ssStatus.Name = "ssStatus";
-            this.ssStatus.Size = new System.Drawing.Size(1027, 22);
-            this.ssStatus.TabIndex = 2;
-            this.ssStatus.Text = "statusStrip1";
-            // 
-            // pgConfig
-            // 
-            this.pgConfig.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pgConfig.Location = new System.Drawing.Point(436, 160);
-            this.pgConfig.Name = "pgConfig";
-            this.pgConfig.Size = new System.Drawing.Size(591, 394);
-            this.pgConfig.TabIndex = 3;
-            // 
-            // pCommands
-            // 
-            this.pCommands.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.pCommands.Controls.Add(this.bChangeAll);
-            this.pCommands.Controls.Add(this.bNewComputer);
-            this.pCommands.Controls.Add(this.bNewFolder);
-            this.pCommands.Controls.Add(this.bTrash);
-            this.pCommands.Controls.Add(this.bCut);
-            this.pCommands.Controls.Add(this.bPaste);
-            this.pCommands.Controls.Add(this.bCopy);
-            this.pCommands.Controls.Add(this.bDown);
-            this.pCommands.Controls.Add(this.bUp);
-            this.pCommands.Controls.Add(this.panel5);
-            this.pCommands.Controls.Add(this.panel6);
-            this.pCommands.Controls.Add(this.panel7);
-            this.pCommands.Controls.Add(this.panel8);
-            this.pCommands.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pCommands.Location = new System.Drawing.Point(436, 100);
-            this.pCommands.Name = "pCommands";
-            this.pCommands.Size = new System.Drawing.Size(591, 60);
-            this.pCommands.TabIndex = 2;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(10, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(571, 10);
-            this.panel5.TabIndex = 8;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel6.Location = new System.Drawing.Point(10, 50);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(571, 10);
-            this.panel6.TabIndex = 7;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel7.Location = new System.Drawing.Point(581, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(10, 60);
-            this.panel7.TabIndex = 6;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(10, 60);
-            this.panel8.TabIndex = 5;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.lComputer);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(436, 60);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(591, 40);
-            this.panel9.TabIndex = 4;
-            // 
-            // lComputer
-            // 
-            this.lComputer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lComputer.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lComputer.Location = new System.Drawing.Point(0, 0);
-            this.lComputer.Name = "lComputer";
-            this.lComputer.Size = new System.Drawing.Size(591, 40);
-            this.lComputer.TabIndex = 0;
-            this.lComputer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // sfd
-            // 
-            this.sfd.DefaultExt = "grim";
-            this.sfd.FileName = "new_grimoire1";
-            this.sfd.Filter = "Grimoire Files|*.grim";
-            this.sfd.Title = "Save the computer inventory schema";
-            this.sfd.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
-            // 
-            // ofd
-            // 
-            this.ofd.DefaultExt = "grim";
-            this.ofd.Filter = "Grimoire Files|*.grim";
-            // 
-            // tSearch
-            // 
-            this.tSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tSearch.Location = new System.Drawing.Point(384, 10);
-            this.tSearch.Name = "tSearch";
-            this.tSearch.Size = new System.Drawing.Size(342, 40);
-            this.tSearch.TabIndex = 7;
-            this.tSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tSearch_KeyPress);
-            // 
-            // bChangeAll
-            // 
-            this.bChangeAll.AccessibleDescription = "About";
-            this.bChangeAll.BackgroundImage = global::Grimorie.Properties.Resources.document_list;
-            this.bChangeAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bChangeAll.Dock = System.Windows.Forms.DockStyle.Left;
-            this.bChangeAll.ImageList = this.imageList1;
-            this.bChangeAll.Location = new System.Drawing.Point(330, 10);
-            this.bChangeAll.Name = "bChangeAll";
-            this.bChangeAll.Size = new System.Drawing.Size(40, 40);
-            this.bChangeAll.TabIndex = 14;
-            this.bChangeAll.UseVisualStyleBackColor = true;
-            this.bChangeAll.Click += new System.EventHandler(this.bChangeAll_Click);
-            // 
-            // bNewComputer
-            // 
-            this.bNewComputer.AccessibleDescription = "About";
-            this.bNewComputer.BackgroundImage = global::Grimorie.Properties.Resources.computer;
-            this.bNewComputer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bNewComputer.Dock = System.Windows.Forms.DockStyle.Left;
-            this.bNewComputer.ImageList = this.imageList1;
-            this.bNewComputer.Location = new System.Drawing.Point(290, 10);
-            this.bNewComputer.Name = "bNewComputer";
-            this.bNewComputer.Size = new System.Drawing.Size(40, 40);
-            this.bNewComputer.TabIndex = 13;
-            this.bNewComputer.UseVisualStyleBackColor = true;
-            this.bNewComputer.Click += new System.EventHandler(this.bNewComputer_Click);
-            // 
-            // bNewFolder
-            // 
-            this.bNewFolder.AccessibleDescription = "About";
-            this.bNewFolder.BackgroundImage = global::Grimorie.Properties.Resources.folder;
-            this.bNewFolder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bNewFolder.Dock = System.Windows.Forms.DockStyle.Left;
-            this.bNewFolder.ImageList = this.imageList1;
-            this.bNewFolder.Location = new System.Drawing.Point(250, 10);
-            this.bNewFolder.Name = "bNewFolder";
-            this.bNewFolder.Size = new System.Drawing.Size(40, 40);
-            this.bNewFolder.TabIndex = 12;
-            this.bNewFolder.UseVisualStyleBackColor = true;
-            this.bNewFolder.Click += new System.EventHandler(this.bNewFolder_Click);
-            // 
-            // bTrash
-            // 
-            this.bTrash.AccessibleDescription = "Save";
-            this.bTrash.BackgroundImage = global::Grimorie.Properties.Resources.trash_bin;
-            this.bTrash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bTrash.Dock = System.Windows.Forms.DockStyle.Left;
-            this.bTrash.ImageList = this.imageList1;
-            this.bTrash.Location = new System.Drawing.Point(210, 10);
-            this.bTrash.Name = "bTrash";
-            this.bTrash.Size = new System.Drawing.Size(40, 40);
-            this.bTrash.TabIndex = 11;
-            this.bTrash.UseVisualStyleBackColor = true;
-            this.bTrash.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // bCut
-            // 
-            this.bCut.AccessibleDescription = "Save";
-            this.bCut.BackgroundImage = global::Grimorie.Properties.Resources.cut;
-            this.bCut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bCut.Dock = System.Windows.Forms.DockStyle.Left;
-            this.bCut.ImageList = this.imageList1;
-            this.bCut.Location = new System.Drawing.Point(170, 10);
-            this.bCut.Name = "bCut";
-            this.bCut.Size = new System.Drawing.Size(40, 40);
-            this.bCut.TabIndex = 10;
-            this.bCut.UseVisualStyleBackColor = true;
-            this.bCut.Click += new System.EventHandler(this.button2_Click_1);
-            // 
-            // bPaste
-            // 
-            this.bPaste.AccessibleDescription = "Save";
-            this.bPaste.BackgroundImage = global::Grimorie.Properties.Resources.past;
-            this.bPaste.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bPaste.Dock = System.Windows.Forms.DockStyle.Left;
-            this.bPaste.ImageList = this.imageList1;
-            this.bPaste.Location = new System.Drawing.Point(130, 10);
-            this.bPaste.Name = "bPaste";
-            this.bPaste.Size = new System.Drawing.Size(40, 40);
-            this.bPaste.TabIndex = 9;
-            this.bPaste.UseVisualStyleBackColor = true;
-            this.bPaste.Click += new System.EventHandler(this.bPaste_Click);
-            // 
-            // bCopy
-            // 
-            this.bCopy.AccessibleDescription = "Save";
-            this.bCopy.BackgroundImage = global::Grimorie.Properties.Resources.copy_files;
-            this.bCopy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bCopy.Dock = System.Windows.Forms.DockStyle.Left;
-            this.bCopy.ImageList = this.imageList1;
-            this.bCopy.Location = new System.Drawing.Point(90, 10);
-            this.bCopy.Name = "bCopy";
-            this.bCopy.Size = new System.Drawing.Size(40, 40);
-            this.bCopy.TabIndex = 8;
-            this.bCopy.UseVisualStyleBackColor = true;
-            this.bCopy.Click += new System.EventHandler(this.bCopy_Click);
-            // 
-            // bDown
-            // 
-            this.bDown.AccessibleDescription = "Open";
-            this.bDown.BackgroundImage = global::Grimorie.Properties.Resources.arrow_down;
-            this.bDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bDown.Dock = System.Windows.Forms.DockStyle.Left;
-            this.bDown.ImageList = this.imageList1;
-            this.bDown.Location = new System.Drawing.Point(50, 10);
-            this.bDown.Name = "bDown";
-            this.bDown.Size = new System.Drawing.Size(40, 40);
-            this.bDown.TabIndex = 7;
-            this.bDown.UseVisualStyleBackColor = true;
-            this.bDown.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // bUp
-            // 
-            this.bUp.AccessibleDescription = "New";
-            this.bUp.BackgroundImage = global::Grimorie.Properties.Resources.arrow_up;
-            this.bUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bUp.Dock = System.Windows.Forms.DockStyle.Left;
-            this.bUp.ImageList = this.imageList1;
-            this.bUp.Location = new System.Drawing.Point(10, 10);
-            this.bUp.Name = "bUp";
-            this.bUp.Size = new System.Drawing.Size(40, 40);
-            this.bUp.TabIndex = 6;
-            this.bUp.UseVisualStyleBackColor = true;
-            this.bUp.Click += new System.EventHandler(this.bUp_Click);
-            // 
             // bSearch
             // 
             this.bSearch.AccessibleDescription = "About";
@@ -458,6 +184,15 @@
             this.bSearch.TabIndex = 8;
             this.bSearch.UseVisualStyleBackColor = true;
             this.bSearch.Click += new System.EventHandler(this.bSearch_Click);
+            // 
+            // tSearch
+            // 
+            this.tSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tSearch.Location = new System.Drawing.Point(384, 10);
+            this.tSearch.Name = "tSearch";
+            this.tSearch.Size = new System.Drawing.Size(342, 40);
+            this.tSearch.TabIndex = 7;
+            this.tSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tSearch_KeyPress);
             // 
             // bModelUnlock
             // 
@@ -590,6 +325,274 @@
             this.bClose.UseVisualStyleBackColor = true;
             this.bClose.Click += new System.EventHandler(this.button1_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Khaki;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(10, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1007, 10);
+            this.panel2.TabIndex = 4;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Khaki;
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(10, 50);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1007, 10);
+            this.panel4.TabIndex = 3;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Khaki;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(1017, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(10, 60);
+            this.panel3.TabIndex = 2;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Khaki;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(10, 60);
+            this.panel1.TabIndex = 0;
+            // 
+            // ssStatus
+            // 
+            this.ssStatus.Location = new System.Drawing.Point(0, 554);
+            this.ssStatus.Name = "ssStatus";
+            this.ssStatus.Size = new System.Drawing.Size(1027, 22);
+            this.ssStatus.TabIndex = 2;
+            this.ssStatus.Text = "statusStrip1";
+            // 
+            // pgConfig
+            // 
+            this.pgConfig.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pgConfig.Location = new System.Drawing.Point(436, 160);
+            this.pgConfig.Name = "pgConfig";
+            this.pgConfig.Size = new System.Drawing.Size(591, 394);
+            this.pgConfig.TabIndex = 3;
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.lComputer);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.Location = new System.Drawing.Point(436, 60);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(591, 40);
+            this.panel9.TabIndex = 4;
+            // 
+            // lComputer
+            // 
+            this.lComputer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lComputer.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lComputer.Location = new System.Drawing.Point(0, 0);
+            this.lComputer.Name = "lComputer";
+            this.lComputer.Size = new System.Drawing.Size(591, 40);
+            this.lComputer.TabIndex = 0;
+            this.lComputer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // sfd
+            // 
+            this.sfd.DefaultExt = "grim";
+            this.sfd.FileName = "new_grimoire1";
+            this.sfd.Filter = "Grimoire Files|*.grim";
+            this.sfd.Title = "Save the computer inventory schema";
+            this.sfd.FileOk += new System.ComponentModel.CancelEventHandler(this.saveFileDialog1_FileOk);
+            // 
+            // ofd
+            // 
+            this.ofd.DefaultExt = "grim";
+            this.ofd.Filter = "Grimoire Files|*.grim";
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(10, 60);
+            this.panel8.TabIndex = 5;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel7.Location = new System.Drawing.Point(581, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(10, 60);
+            this.panel7.TabIndex = 6;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel6.Location = new System.Drawing.Point(10, 50);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(571, 10);
+            this.panel6.TabIndex = 7;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel5.Location = new System.Drawing.Point(10, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(571, 10);
+            this.panel5.TabIndex = 8;
+            // 
+            // bUp
+            // 
+            this.bUp.AccessibleDescription = "New";
+            this.bUp.BackgroundImage = global::Grimorie.Properties.Resources.arrow_up;
+            this.bUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bUp.Dock = System.Windows.Forms.DockStyle.Left;
+            this.bUp.ImageList = this.imageList1;
+            this.bUp.Location = new System.Drawing.Point(10, 10);
+            this.bUp.Name = "bUp";
+            this.bUp.Size = new System.Drawing.Size(40, 40);
+            this.bUp.TabIndex = 6;
+            this.bUp.UseVisualStyleBackColor = true;
+            this.bUp.Click += new System.EventHandler(this.bUp_Click);
+            // 
+            // bDown
+            // 
+            this.bDown.AccessibleDescription = "Open";
+            this.bDown.BackgroundImage = global::Grimorie.Properties.Resources.arrow_down;
+            this.bDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bDown.Dock = System.Windows.Forms.DockStyle.Left;
+            this.bDown.ImageList = this.imageList1;
+            this.bDown.Location = new System.Drawing.Point(50, 10);
+            this.bDown.Name = "bDown";
+            this.bDown.Size = new System.Drawing.Size(40, 40);
+            this.bDown.TabIndex = 7;
+            this.bDown.UseVisualStyleBackColor = true;
+            this.bDown.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // bCopy
+            // 
+            this.bCopy.AccessibleDescription = "Save";
+            this.bCopy.BackgroundImage = global::Grimorie.Properties.Resources.copy_files;
+            this.bCopy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bCopy.Dock = System.Windows.Forms.DockStyle.Left;
+            this.bCopy.ImageList = this.imageList1;
+            this.bCopy.Location = new System.Drawing.Point(90, 10);
+            this.bCopy.Name = "bCopy";
+            this.bCopy.Size = new System.Drawing.Size(40, 40);
+            this.bCopy.TabIndex = 8;
+            this.bCopy.UseVisualStyleBackColor = true;
+            this.bCopy.Click += new System.EventHandler(this.bCopy_Click);
+            // 
+            // bPaste
+            // 
+            this.bPaste.AccessibleDescription = "Save";
+            this.bPaste.BackgroundImage = global::Grimorie.Properties.Resources.past;
+            this.bPaste.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bPaste.Dock = System.Windows.Forms.DockStyle.Left;
+            this.bPaste.ImageList = this.imageList1;
+            this.bPaste.Location = new System.Drawing.Point(130, 10);
+            this.bPaste.Name = "bPaste";
+            this.bPaste.Size = new System.Drawing.Size(40, 40);
+            this.bPaste.TabIndex = 9;
+            this.bPaste.UseVisualStyleBackColor = true;
+            this.bPaste.Click += new System.EventHandler(this.bPaste_Click);
+            // 
+            // bCut
+            // 
+            this.bCut.AccessibleDescription = "Save";
+            this.bCut.BackgroundImage = global::Grimorie.Properties.Resources.cut;
+            this.bCut.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bCut.Dock = System.Windows.Forms.DockStyle.Left;
+            this.bCut.ImageList = this.imageList1;
+            this.bCut.Location = new System.Drawing.Point(170, 10);
+            this.bCut.Name = "bCut";
+            this.bCut.Size = new System.Drawing.Size(40, 40);
+            this.bCut.TabIndex = 10;
+            this.bCut.UseVisualStyleBackColor = true;
+            this.bCut.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // bTrash
+            // 
+            this.bTrash.AccessibleDescription = "Save";
+            this.bTrash.BackgroundImage = global::Grimorie.Properties.Resources.trash_bin;
+            this.bTrash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bTrash.Dock = System.Windows.Forms.DockStyle.Left;
+            this.bTrash.ImageList = this.imageList1;
+            this.bTrash.Location = new System.Drawing.Point(210, 10);
+            this.bTrash.Name = "bTrash";
+            this.bTrash.Size = new System.Drawing.Size(40, 40);
+            this.bTrash.TabIndex = 11;
+            this.bTrash.UseVisualStyleBackColor = true;
+            this.bTrash.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // bNewFolder
+            // 
+            this.bNewFolder.AccessibleDescription = "About";
+            this.bNewFolder.BackgroundImage = global::Grimorie.Properties.Resources.folder;
+            this.bNewFolder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bNewFolder.Dock = System.Windows.Forms.DockStyle.Left;
+            this.bNewFolder.ImageList = this.imageList1;
+            this.bNewFolder.Location = new System.Drawing.Point(250, 10);
+            this.bNewFolder.Name = "bNewFolder";
+            this.bNewFolder.Size = new System.Drawing.Size(40, 40);
+            this.bNewFolder.TabIndex = 12;
+            this.bNewFolder.UseVisualStyleBackColor = true;
+            this.bNewFolder.Click += new System.EventHandler(this.bNewFolder_Click);
+            // 
+            // bNewComputer
+            // 
+            this.bNewComputer.AccessibleDescription = "About";
+            this.bNewComputer.BackgroundImage = global::Grimorie.Properties.Resources.computer;
+            this.bNewComputer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bNewComputer.Dock = System.Windows.Forms.DockStyle.Left;
+            this.bNewComputer.ImageList = this.imageList1;
+            this.bNewComputer.Location = new System.Drawing.Point(290, 10);
+            this.bNewComputer.Name = "bNewComputer";
+            this.bNewComputer.Size = new System.Drawing.Size(40, 40);
+            this.bNewComputer.TabIndex = 13;
+            this.bNewComputer.UseVisualStyleBackColor = true;
+            this.bNewComputer.Click += new System.EventHandler(this.bNewComputer_Click);
+            // 
+            // bChangeAll
+            // 
+            this.bChangeAll.AccessibleDescription = "About";
+            this.bChangeAll.BackgroundImage = global::Grimorie.Properties.Resources.document_list;
+            this.bChangeAll.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bChangeAll.Dock = System.Windows.Forms.DockStyle.Left;
+            this.bChangeAll.ImageList = this.imageList1;
+            this.bChangeAll.Location = new System.Drawing.Point(330, 10);
+            this.bChangeAll.Name = "bChangeAll";
+            this.bChangeAll.Size = new System.Drawing.Size(40, 40);
+            this.bChangeAll.TabIndex = 14;
+            this.bChangeAll.UseVisualStyleBackColor = true;
+            this.bChangeAll.Click += new System.EventHandler(this.bChangeAll_Click);
+            // 
+            // pCommands
+            // 
+            this.pCommands.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.pCommands.Controls.Add(this.bChangeAll);
+            this.pCommands.Controls.Add(this.bNewComputer);
+            this.pCommands.Controls.Add(this.bNewFolder);
+            this.pCommands.Controls.Add(this.bTrash);
+            this.pCommands.Controls.Add(this.bCut);
+            this.pCommands.Controls.Add(this.bPaste);
+            this.pCommands.Controls.Add(this.bCopy);
+            this.pCommands.Controls.Add(this.bDown);
+            this.pCommands.Controls.Add(this.bUp);
+            this.pCommands.Controls.Add(this.panel5);
+            this.pCommands.Controls.Add(this.panel6);
+            this.pCommands.Controls.Add(this.panel7);
+            this.pCommands.Controls.Add(this.panel8);
+            this.pCommands.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pCommands.Location = new System.Drawing.Point(436, 100);
+            this.pCommands.Name = "pCommands";
+            this.pCommands.Size = new System.Drawing.Size(591, 60);
+            this.pCommands.TabIndex = 2;
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -609,8 +612,8 @@
             this.cmsComputerMap.ResumeLayout(false);
             this.pMain.ResumeLayout(false);
             this.pMain.PerformLayout();
-            this.pCommands.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
+            this.pCommands.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -622,7 +625,6 @@
         private System.Windows.Forms.Panel pMain;
         private System.Windows.Forms.StatusStrip ssStatus;
         private System.Windows.Forms.PropertyGrid pgConfig;
-        private System.Windows.Forms.Panel pCommands;
         private System.Windows.Forms.Button bClose;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
@@ -638,30 +640,31 @@
         private System.Windows.Forms.ToolStripMenuItem newComputerToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem duplicateToolStripMenuItem;
-        private System.Windows.Forms.Button bCopy;
-        private System.Windows.Forms.Button bDown;
-        private System.Windows.Forms.Button bUp;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button bCut;
-        private System.Windows.Forms.Button bPaste;
         private System.Windows.Forms.Button bLock;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label lComputer;
-        private System.Windows.Forms.Button bTrash;
         private System.Windows.Forms.Button bModelUnlock;
         private System.Windows.Forms.Button bModelLock;
         private System.Windows.Forms.Button bRun;
-        private System.Windows.Forms.Button bNewComputer;
-        private System.Windows.Forms.Button bNewFolder;
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.SaveFileDialog sfd;
         private System.Windows.Forms.OpenFileDialog ofd;
-        private System.Windows.Forms.Button bChangeAll;
         private System.Windows.Forms.Button bSearch;
         private System.Windows.Forms.TextBox tSearch;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button bUp;
+        private System.Windows.Forms.Button bDown;
+        private System.Windows.Forms.Button bCopy;
+        private System.Windows.Forms.Button bPaste;
+        private System.Windows.Forms.Button bCut;
+        private System.Windows.Forms.Button bTrash;
+        private System.Windows.Forms.Button bNewFolder;
+        private System.Windows.Forms.Button bNewComputer;
+        private System.Windows.Forms.Button bChangeAll;
+        private System.Windows.Forms.Panel pCommands;
     }
 }
 

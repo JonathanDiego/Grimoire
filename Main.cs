@@ -35,12 +35,16 @@ namespace Grimoire
             if (((ClassObjGrimoire)e.Node.Tag).isComputer)
             {
                 pgConfig.SelectedObject = e.Node.Tag as object;
-                lComputer.Text = e.Node.Text;
+
+                string textParent = e.Node.Parent == null ? "" : e.Node.Parent.FullPath + " - ";
+                lComputer.Text = textParent + e.Node.Text;
             }
             else
             {
                 pgConfig.SelectedObject = (new ClassGrimoireFolder(((ClassObjGrimoire)e.Node.Tag))) as object;
-                lComputer.Text = e.Node.Text;
+
+                string textParent = e.Node.Parent == null ? "" : e.Node.Parent.FullPath + " - ";
+                lComputer.Text = textParent + e.Node.Text;
 
             }
         }
@@ -539,13 +543,13 @@ namespace Grimoire
 
             ClassObjGrimoire _current = (ClassObjGrimoire)current.Tag;
 
-            if (_current.Name != null) if (_current.Name.Contains(search)) return current;
-            if (_current.Description != null) if (_current.Description.Contains(search)) return current;
-            if (_current.Host != null) if (_current.Host.Contains(search)) return current;
-            if (_current.IP != null) if (_current.IP.Contains(search)) return current;
-            if (_current.Observation1 != null) if (_current.Observation1.Contains(search)) return current;
-            if (_current.Observation2 != null) if (_current.Observation2.Contains(search)) return current;
-            if (_current.Observation3 != null) if (_current.Observation3.Contains(search)) return current;
+            if (_current.Name != null) if (_current.Name.ToUpper().Contains(search)) return current;
+            if (_current.Description != null) if (_current.Description.ToUpper().Contains(search)) return current;
+            if (_current.Host != null) if (_current.Host.ToUpper().Contains(search)) return current;
+            if (_current.IP != null) if (_current.IP.ToUpper().Contains(search)) return current;
+            if (_current.Observation1 != null) if (_current.Observation1.ToUpper().Contains(search)) return current;
+            if (_current.Observation2 != null) if (_current.Observation2.ToUpper().Contains(search)) return current;
+            if (_current.Observation3 != null) if (_current.Observation3.ToUpper().Contains(search)) return current;
 
             TreeNode child = null;
 
@@ -565,7 +569,7 @@ namespace Grimoire
             if (tSearch.Text.Trim() == "")
                 return;
 
-            string sSearch = tSearch.Text;
+            string sSearch = tSearch.Text.ToUpper();
 
             if (tvComputerMap.Nodes.Count < 1) 
                 return;
